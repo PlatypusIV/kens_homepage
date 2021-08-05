@@ -1,0 +1,26 @@
+.divMainPortfolio{
+    // background-color: lightgoldenrodyellow;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 50px;
+    }
+
+    ul{
+        margin: 10px;
+        padding:0;
+        list-style: none;
+        display: flex;
+
+        li{
+            font-size: 12px;
+            margin-right: 6px;
+            padding: 0.7em;
+        }
+    }
+    
+}

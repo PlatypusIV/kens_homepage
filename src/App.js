@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Contact, Intro, Portfolio, Testimonials, Topbar, Works, Menu } from "./components";
+import "./app.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state={
+      menuOpen: false
+    }
+  }
+
+
+  openCloseMenu = () => {
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Topbar menuStateProp={this.state.menuOpen} openMenuProp={this.openCloseMenu} />
+        <Menu menuStateProp={this.state.menuOpen} openMenuProp={this.openCloseMenu}/>
+        <section className="sections">
+          <Intro></Intro>
+          <Portfolio></Portfolio>
+          <Testimonials></Testimonials>
+          <Works></Works>
+          <Contact></Contact>
+        </section>
+      </div>
+    );
+
+  }
 }
-
 export default App;
