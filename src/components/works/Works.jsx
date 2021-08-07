@@ -21,15 +21,15 @@ class Works extends Component {
 
         // (slideDir ==="left") ? (currentSlide>0) ? newSlideNumber = 1:newSlideNumber = currentSlide-1   : (currentSlide>=1)? newSlideNumber = 0:newSlideNumber = currentSlide+1;
 
-        if(slideDir === "left"){
-            (currentSlide<=0?newSlideNumber=1:newSlideNumber=currentSlide-1)
-        }else{
-            (currentSlide>=1?newSlideNumber=0:newSlideNumber=currentSlide+1)
+        if (slideDir === "left") {
+            (currentSlide <= 0 ? newSlideNumber = 1 : newSlideNumber = currentSlide - 1)
+        } else {
+            (currentSlide >= 1 ? newSlideNumber = 0 : newSlideNumber = currentSlide + 1)
 
         }
 
         this.setState({
-            currentSlide:newSlideNumber
+            currentSlide: newSlideNumber
         })
 
     }
@@ -42,14 +42,14 @@ class Works extends Component {
 
             console.log(projects[key]);
             itemsToRender = projects[key].map(item => <div className="divContainer">
-                <div className="divItem">
+                <div className="divWorksItem">
                     <div className="divLeft">
                         <div className="divLeftContainer">
 
                             <div className="divImgContainer">
-                                <img src={(item.type==="webapp")?"assets/globe.png":"assets/mobile.png"} alt="" />
+                                <img src={(item.type === "webapp") ? "assets/globe.png" : "assets/mobile.png"} alt="" />
                             </div>
-                            
+
                             <h2>{item.title}</h2>
                             <p>{item.description}</p>
 
@@ -60,6 +60,9 @@ class Works extends Component {
                                 </ul>
                             </div>
 
+                            <div className="divVisit">
+                                <button className="btnVisit">Visit the site!</button>
+                            </div>
                         </div>
                     </div>
                     <div className="divRight">
@@ -79,14 +82,14 @@ class Works extends Component {
         const { currentSlide } = this.state;
         return (
             <div className="divMainWorks" id="works">
-                <div className="divSlider" style={{ transform: `translateX(-${currentSlide *100}vw)` }}>
+                <div className="divSlider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
                     {this.renderProjects()}
 
                 </div>
 
-                <img src="assets/arrow.png" alt="" className="arrow left" onClick={()=>this.setcurrentSlide("left")}/>
+                <img src="assets/arrow.png" alt="" className="arrow left" onClick={() => this.setcurrentSlide("left")} />
 
-                <img src="assets/arrow.png" alt="" className="arrow right" onClick={()=>this.setcurrentSlide("right")}/>
+                <img src="assets/arrow.png" alt="" className="arrow right" onClick={() => this.setcurrentSlide("right")} />
             </div>
         )
     }
