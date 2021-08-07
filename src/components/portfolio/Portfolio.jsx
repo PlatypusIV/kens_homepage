@@ -74,9 +74,9 @@ class Portfolio extends Component {
         return (
             <div className="divMainPortfolio" id="portfolio">
                 <h1>Portfolio</h1>
-                <ul>
+                {/* <ul>
                     {this.renderPortfolioTitles()}
-                </ul>
+                </ul> */}
                 <div className="divContainer">
 
 
