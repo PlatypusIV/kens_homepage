@@ -5,8 +5,10 @@ import Testimonials from "./testimonials/Testimonials";
 import Topbar from "./topbar/Topbar";
 import Works from "./works/Works";
 import Menu from "./menu/Menu";
+import PortfolioList from "./portfolioList/PortfolioList";
+import PortfolioItem from "./portfolioItem/PortfolioItem";
 
 
 export{
-    Contact,Intro,Portfolio,Testimonials,Topbar,Works,Menu
+    Contact,Intro,Portfolio,Testimonials,Topbar,Works,Menu,PortfolioList,PortfolioItem
 }

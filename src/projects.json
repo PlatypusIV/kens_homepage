@@ -1,0 +1,36 @@
+{
+    "webapps": [
+        {
+            "url": "https://platypusiv.github.io/vtuberhome/",
+            "description": "A react application made to introduce people to different vtubers. It collects data from different websites (twitter, youtube, twitch etc), puts it into one place, lets you save your favorites into your browser for later viewing.",
+            "githubUrl": "https://github.com/PlatypusIV/vtuberhome",
+            "technologies": [
+                "Nodejs",
+                "Reactjs",
+                "Google Apis"
+            ],
+            "title": "Vtuber home",
+            "images": [
+                "assets/projects/vtuberHome1.png",
+                "vtuberHome2.png",
+                "vtuberHome3.png"
+            ],
+            "type": "webapp"
+        },
+        {
+            "url": "https://platypusiv.github.io/tarfPage/",
+            "description": "Homepage for Tarf the musician. Planning to add live viewcounts and data live from yt for this.",
+            "githubUrl": "https://github.com/PlatypusIV/tarfPage",
+            "technologies": [
+                "Reactjs",
+                "Nodejs"
+            ],
+            "title": "Tarfs homepage",
+            "images": [
+                "assets/projects/tarfPage1.png",
+                "tarfPage2.png"
+            ],
+            "type": "webapp"
+        }
+    ]
+}

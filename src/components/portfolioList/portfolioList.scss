@@ -1,0 +1,16 @@
+@import "../../global.scss";
+
+.liListitem {
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    span {
+        font-size: 20px;
+    }
+
+    &.active {
+        background-color: $mainColor;
+        color: white;
+    }
+}

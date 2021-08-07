@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .divMainPortfolio{
     // background-color: lightgoldenrodyellow;
     height: 100vh;
@@ -15,12 +17,63 @@
         padding:0;
         list-style: none;
         display: flex;
+        cursor: pointer;
 
         li{
-            font-size: 12px;
-            margin-right: 6px;
-            padding: 0.7em;
+            margin-right: 50px;
         }
+
     }
+
+    .divContainer{
+        width: 70%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+
+    // .divItem{
+    //     width: 400px;
+    //     height: 200px;
+    //     margin: 6px;
+    //     border-radius: 10px;
+    //     border: 1px solid rgb(228, 228, 228);
+
+    //     text-align: center;
+
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     color: white;
+
+    //     position: relative;
+
+    //     transition: all 0.5s ease;
+    //     cursor: pointer;
+
+        
+    //     img{
+    //         width: 100%;
+    //         height: 100%;
+    //         z-index: 1;
+    //     }
+
+    //     h3{
+    //         position: absolute;
+    //         font-size: 20px;
+    //     }
+
+    //     &:hover{
+    //         background-color: $mainColor;
+    //         img{
+    //             z-index: 0;
+    //             opacity: 0.2;
+    //         }
+
+    //     }
+    // }
     
 }
