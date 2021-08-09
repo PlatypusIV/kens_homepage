@@ -64,7 +64,7 @@ class Contact extends Component {
                     </form>
                     {this.state.reply&& <span>Thank you for your message . I will reply to you, first chance I get!</span>}
                     <div className="divRelevantLinks">
-                        {/* <a href=""><img src="assets/linkedin.png" alt="" /></a> */}
+                        <a href="https://linkedin.com/in/herbert-ken-ümera-74709b176"><img src="assets/linkedin.png" alt="" /></a>
                         <a href="https://www.fiverr.com/users/herbertkenmera/"><img src="assets/fiverr.png" alt="" /></a>
                         <a href="https://github.com/PlatypusIV"><img src="assets/github.png" alt="" /></a>
                     </div>
