@@ -37,13 +37,13 @@ class Portfolio extends Component {
             for(let key in portfolioItems){
 
                 console.log(portfolioItems[key]);
-                itemsToRender = portfolioItems[key].map(item => <PortfolioItem imageProp={item.images[0]} titleProp={item.title} urlProp={item.url}/>)
+                itemsToRender = portfolioItems[key].map(item => <PortfolioItem imageProp={item.images[0]} titleProp={item.title} urlProp={item.url} getPortfolioItemProp={this.props.chooseWorkProp} workIndexProp={item.index}/>)
             }
                 break;
 
             default:
                 itemsToRender = portfolioItems[selected].map(item =>
-                    <PortfolioItem imageProp={item.images[0]} titleProp={item.title} urlProp={item.url}/>
+                    <PortfolioItem imageProp={item.images[0]} titleProp={item.title} urlProp={item.url} getPortfolioItemProp={this.props.chooseWorkProp} workIndexProp={item.index}/>
 
                 )
                 break;

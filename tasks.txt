@@ -1,0 +1,25 @@
+works element looks
+    border
+    image proper fit
+
+
+works element: visit the site button
+    functionality+
+    style+ (ehh kinda)
+
+works element slide transition
+
+
+fix color scheme
+
+portfolio item link to works item
+
+import colorscheme from cocktail site+
+
+fix scroll positioning (il get to it later)
+
+add contact buttons to contact view
+
+add email sending logic + (kinda)
+
+fix portfolio image overflow

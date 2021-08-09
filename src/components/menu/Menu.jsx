@@ -25,18 +25,10 @@ export class Menu extends Component {
                         </a>
                     </li>
                     <li>
-                        <a href="#testimonials" onClick={this.closeMenu}>
-                            Testimonials
-                        </a>
-                    </li>
-                    <li>
                         <a href="#works" onClick={this.closeMenu}>
                             Works
                         </a>
                     </li>
-
-
-
                     <li>
                         <a href="#contacts" onClick={this.closeMenu}>
                             Contact

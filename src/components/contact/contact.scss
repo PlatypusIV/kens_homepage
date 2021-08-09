@@ -1,5 +1,109 @@
-.divContactMain{
-    background-color: lightblue;
-    height: 100vh;
+@import "../../global.scss";
 
+
+.divContactMain{
+    // height: 100vh;
+    background-color: $StrikingAndSimpleTwo;
+    color: white;
+
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        
+    }    
+
+    .divLeft{
+        height: 100%;
+        flex: 1;
+        overflow:hidden;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .divRight{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        h2{
+            font-size: 30px;
+        }
+
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            input{
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+
+                @include mobile{
+                    width: 200px;
+                    height: 20px;
+                    
+                }   
+            }
+
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size: 14px;
+
+                @include mobile{
+                    width: 200px;
+                    height: 100px;
+                    
+                } 
+            }
+
+            button{
+                width: 150px;
+                height: 30px;
+                color: white;
+                //TODO
+                //proper button color
+                background-color: crimson;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor:pointer;
+            }
+
+            
+        }
+
+        span{
+            color: White;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .divRelevantLinks{
+            display: flex;
+
+            @include mobile{
+                margin-top: 15px;
+            }
+
+            a{
+                margin: 6px;
+
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
 }

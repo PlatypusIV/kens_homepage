@@ -15,22 +15,25 @@
                 "vtuberHome2.png",
                 "vtuberHome3.png"
             ],
-            "type": "webapp"
+            "type": "webapp",
+            "index":0
         },
         {
             "url": "https://platypusiv.github.io/tarfPage/",
-            "description": "Homepage for Tarf the musician. Planning to add live viewcounts and data live from yt for this.",
+            "description": "Homepage for Tarf the musician.",
             "githubUrl": "https://github.com/PlatypusIV/tarfPage",
             "technologies": [
                 "Reactjs",
-                "Nodejs"
+                "Nodejs",
+                "Youtube Data Api"
             ],
             "title": "Tarfs homepage",
             "images": [
                 "assets/projects/tarfPage1.png",
                 "tarfPage2.png"
             ],
-            "type": "webapp"
+            "type": "webapp",
+            "index":1
         }
     ]
 }

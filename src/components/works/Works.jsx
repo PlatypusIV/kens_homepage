@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import projects from "../../projects.json";
 import "./works.scss";
 
+const projectCount = 2;
 class Works extends Component {
 
     constructor() {
@@ -11,22 +12,49 @@ class Works extends Component {
         }
     }
 
+    componentDidUpdate=(prevProps)=>{
+        if(prevProps.workIndexProp!==this.props.workIndexProp){
+            this.setcurrentSlide(this.props.workIndexProp);
+        }
+    }
+
+
+    openUrl = (inputUrl) => {
+
+        if (inputUrl !== undefined) {
+            window.open(inputUrl, '_blank');
+        }
+    }
 
     //TODO
     //Add reference to project count
+    //Temporary solution: local variable
     setcurrentSlide = (slideDir = null) => {
         const { currentSlide } = this.state;
         let newSlideNumber = 0;
 
 
-        // (slideDir ==="left") ? (currentSlide>0) ? newSlideNumber = 1:newSlideNumber = currentSlide-1   : (currentSlide>=1)? newSlideNumber = 0:newSlideNumber = currentSlide+1;
-
-        if (slideDir === "left") {
-            (currentSlide <= 0 ? newSlideNumber = 1 : newSlideNumber = currentSlide - 1)
-        } else {
-            (currentSlide >= 1 ? newSlideNumber = 0 : newSlideNumber = currentSlide + 1)
-
+        switch (slideDir) {
+            case "left":
+                (currentSlide <= 0 ? newSlideNumber = 1 : newSlideNumber = currentSlide - 1)
+                break;
+            case "right":
+                (currentSlide >= projectCount - 1 ? newSlideNumber = 0 : newSlideNumber = currentSlide + 1)
+                break;
+            default:
+                if (slideDir !== undefined && slideDir !== null) {
+                    newSlideNumber = slideDir
+                }
+                break;
         }
+
+        // if (slideDir === "left") {
+        //     
+        // } else if ("right") {
+        //     
+        // } else {
+
+        // }
 
         this.setState({
             currentSlide: newSlideNumber
@@ -39,8 +67,6 @@ class Works extends Component {
         let itemsToRender = [];
 
         for (let key in projects) {
-
-            console.log(projects[key]);
             itemsToRender = projects[key].map(item => <div className="divContainer">
                 <div className="divWorksItem">
                     <div className="divLeft">
@@ -61,7 +87,7 @@ class Works extends Component {
                             </div>
 
                             <div className="divVisit">
-                                <button className="btnVisit">Visit the site!</button>
+                                <button className="btnVisit" onClick={() => this.openUrl(item.url)}><span>Visit the site!</span></button>
                             </div>
                         </div>
                     </div>

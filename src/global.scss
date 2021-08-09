@@ -1,1 +1,36 @@
 $mainColor:#15023a;
+
+
+//Deep Purples and blues
+$BlueLight:#3500D3;
+$BlueDark:#240090;
+$PurpleMedium:#190061;
+$PurpleDark:#0C0032;
+$Gray:#282828;
+
+//Bright accents and colors
+$BrightOne:#242582;
+$BrightTwo:#553D67;
+$BrightThree:#F64C72;
+$BrightFour:#99738E;
+$BrightFive:#2F2FA2;
+
+//striking and simple
+$StrikingAndSimpleOne:#0B0C10;
+$StrikingAndSimpleTwo:#1f2833;
+$StrikingAndSimpleThree:#c5c6c7;
+$StrikingAndSimpleFour:#66fcf1;
+$StrikingAndSimpleFive:#45a29e;
+
+
+//Icon colors
+$OperaMauve:#B07C9E;
+
+
+$width:780px;
+
+@mixin mobile{
+    @media (max-width:#{$width}){
+        @content
+    }
+}

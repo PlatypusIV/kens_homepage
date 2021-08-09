@@ -15,7 +15,7 @@ class Topbar extends Component {
                 <div className="divWrapper">
                     <div className="divLeft">
                         <a href="#intro" className="aLogo">
-                            <img src={(this.props.menuStateProp) ? "assets/portfolioLogoWhiteOut.png" : "assets/portfolioLogoBlueOut.png"} className="imgLogo">
+                            <img src={(this.props.menuStateProp) ? "assets/portfolioLogoGrayOut.png" : "assets/portfolioLogoBlackOut.png"} className="imgLogo">
                             </img>
                         </a>
                         <div className="divItemContainer">

@@ -1,142 +1,210 @@
 @import "../../global.scss";
 
-.divMainWorks{
-    background-color: maroon;
-    height: 100vh;
-    display:flex;
+.divMainWorks {
+    background-color: $StrikingAndSimpleTwo;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    color: white;
+    color: black;
 
-    .arrow{
+    .arrow {
         height: 60px;
         position: absolute;
-        cursor:pointer;
+        cursor: pointer;
 
-        &.left{
+        @include mobile {
+            display: none;
+        }
+
+        &.left {
             left: 100px;
             transform: rotateY(180deg);
         }
 
-        &.right{
+        &.right {
             right: 100px;
         }
     }
 
-
-
-
-    .divSlider{
-        height: 500px;
+    .divSlider {
+        height: 600px;
         position: absolute;
         display: flex;
-        left:0;
-        
+        left: 0;
+        transition: all 1s ease-out;
 
-        .divContainer{
+        @include mobile {
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .divContainer {
             width: 100vw;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
 
-            .divWorksItem{
-                width: 900px;
+            @include mobile {
+                flex-direction: column;
+                justify-content: center;
+                align-items: space-around;
+            }
+
+            .divWorksItem {
+                width: 70%;
                 height: 100%;
                 border-radius: 20px;
+                border: solid 2px $StrikingAndSimpleOne;
+                background-color: $StrikingAndSimpleThree;
 
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
-
-                .divLeft{
-                    flex:4;
-                    height:80%;
+                @include mobile {
+                    height: 250px;
+                    width: 90%;
+                }
+                .divLeft {
+                    flex: 4;
+                    height: 80%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
+                    @include mobile {
+                        flex-direction: column;
+                    }
 
-                    .divLeftContainer{
+                    .divLeftContainer {
                         width: 90%;
-                        height: 70%;
+                        height: 100%;
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
-                        justify-content: space-between;
-    
-    
-                        .divImgContainer{
-                            width: 40px;
-                            height: 40px;
+                        align-items: left;
+                        justify-content: center;
+                        overflow: hidden;
+
+                        .divImgContainer {
+                            width: 45px;
+                            height: 45px;
                             border-radius: 50%;
-                            background-color: rgb(236, 108, 61);
+                            background-color: $StrikingAndSimpleThree;
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            overflow: hidden;
-    
-                            img{
+
+                            @include mobile {
+                                display: none;
+                            }
+
+                            img {
                                 height: 25px;
+                                width: 25px;
                             }
                         }
-                        h2{
-                            font-size: 20px;
+
+                        @include mobile {
+                            align-items: left;
+                            justify-content: start;
                         }
-    
-                        p{
-                            font-style: 13px;
-                        }
-    
-                        span{
-                            font-size: 12px;
-                            font-weight: 600;
-                            text-decoration: underline;
+                        h2 {
+                            font-size: 26px;
+                            @include mobile {
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
                         }
 
-                        .divTechnologies{
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            height: 200px;
+
+                            @include mobile {
+                                font-size: 10px;
+                                font-weight: 400;
+                                height: 50px;
+                                margin-bottom: 36px;
+                            }
+                        }
+
+                        .divTechnologies {
                             display: flex;
                             flex-direction: column;
-                            align-items: center;
-                            justify-content: right;
+                            align-items: left;
+                            justify-content: center;
 
-                            ul{
+                            @include mobile {
+                                display: none;
+                            }
+
+                            span {
+                                font-size: 16px;
+                                font-weight: 600;
+                                text-decoration: underline;
+                            }
+
+                            ul {
                                 list-style: none;
+                                text-align: left;
+                                font-size: 14px;
 
-
-                                li{
-                                    font-weight: 600;
+                                li {
+                                    font-weight: 700;
+                                    margin-bottom: 0;
                                 }
                             }
                         }
-    
+
+                        .divVisit {
+                            margin-top: 20px;
+
+                            @include mobile {
+                                // justify-self: flex-end;
+                                display: none;
+                            }
+
+                            button {
+                                background-color: $StrikingAndSimpleOne;
+                                border: solid 1px black;
+                                border-radius: 10px;
+                                color: white;
+                                height: 40px;
+                                width: 100px;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+
+                                span {
+                                    font-weight: 600;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
                     }
                 }
 
-                
-
-                .divRight{
-                    flex:8;
+                .divRight {
+                    flex: 8;
                     height: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
-                    // border-radius: 20px;
+                    border-radius: 18px;
 
-
-                    img{
+                    img {
                         width: 100%;
                         height: 100%;
                         overflow: hidden;
+                        // object-fit:fill;
                     }
-
                 }
             }
         }
     }
-
-
 }

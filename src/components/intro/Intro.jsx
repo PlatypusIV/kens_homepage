@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {init} from "ityped";
 import "./intro.scss";
 
-const jobs = ["Web Developer", "Node.js developer", "Drone pilot"]
+const jobs = ["Web Developer", "Node.js developer","C# developer", "Drone pilot"]
 
 class Intro extends Component {
 
@@ -21,8 +21,8 @@ class Intro extends Component {
                 </div>
                 <div className="divRight">
                     <div className="divWrapper">
-                        <h2>Hi There, I'm</h2>
-                        <h1>Herbert-Ken Ümera</h1>
+                        <h1>Hi There, I'm</h1>
+                        <h2>Herbert-Ken Ümera</h2>
                         <h3>Freelance <span id="jobSpan"></span></h3>
 
                     </div>
