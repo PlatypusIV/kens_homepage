@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kens_homepage/static/css/main.252a4045.chunk.css",
-    "main.js": "/kens_homepage/static/js/main.ed7053d0.chunk.js",
-    "main.js.map": "/kens_homepage/static/js/main.ed7053d0.chunk.js.map",
+    "main.js": "/kens_homepage/static/js/main.d2af3911.chunk.js",
+    "main.js.map": "/kens_homepage/static/js/main.d2af3911.chunk.js.map",
     "runtime-main.js": "/kens_homepage/static/js/runtime-main.9c7747bf.js",
     "runtime-main.js.map": "/kens_homepage/static/js/runtime-main.9c7747bf.js.map",
     "static/js/2.0c9fe201.chunk.js": "/kens_homepage/static/js/2.0c9fe201.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.9c7747bf.js",
     "static/js/2.0c9fe201.chunk.js",
     "static/css/main.252a4045.chunk.css",
-    "static/js/main.ed7053d0.chunk.js"
+    "static/js/main.d2af3911.chunk.js"
   ]
 }
